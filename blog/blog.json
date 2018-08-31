@@ -1,34 +1,27 @@
 {
     "name": "Blog",
     "title": "Blog",
-    "description": "Modification du style pour la partie Blog",
+    "description": "Modifie le blog - fichier css",
     "services": [
         "Customizer"
     ],
-    "state": "disabled",
     "extensions": [
         {
-            "id": "fb8ee2be-8ee2-432d-9fb5-49322f888a23",
-            "name": "extension-blog",
+            "id": "8d9a6849-1086-4b89-a851-c9fc3a9e4fee",
+            "name": "Extension Blog",
             "type": "com.ibm.customizer.ui",
             "payload": {
-                "include-repo": {
-                    "name": "novaliance-samples"
-                },
                 "include-files": [
-                    "inklusif/blog-inklusif.css"
+                    "blog/blog.css",
+                    "blog/commonTools.js",
+                    "blog/blog.js"
                 ],
-                "match": {
-                    "user-name": [
-                        "Mathieu FABIEN",
-                        "Vincent GICQUEL",
-                        "test agefiph"
-                    ]
-                }
+                "include-repo": {
+                    "name": "agefiph-customisation"
+                },
             },
             "path": "blogs",
-            "application": "Blog",
-            "state": "disabled"
+            "application": "Blog"
         }
     ]
 }
